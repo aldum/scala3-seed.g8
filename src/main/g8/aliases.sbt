@@ -25,22 +25,3 @@ addCommandAlias(
   "reload plugins; dependencyUpdates; reload return; dependencyUpdates",
 )
 
-onLoadMessage +=
-  s"""|
-      |╭─────────────────────────────────╮
-      |│     List of defined \${styled("aliases")}     │
-      |├─────────────┬───────────────────┤
-      |│ \${styled("l")} | \${styled("ll")} | \${styled("ls")} │ projects          │
-      |│ \${styled("cd")}          │ project           │
-      |│ \${styled("root")}        │ cd root           │
-      |│ \${styled("c")}           │ compile           │
-      |│ \${styled("ca")}          │ compile all       │
-      |│ \${styled("t")}           │ test              │
-      |│ \${styled("r")}           │ run               │
-      |│ \${styled("rs")}          │ reStart           │
-      |│ \${styled("s")}           │ reStop            │
-      |│ \${styled("star")}        │ thankYouStars     │
-      |│ \${styled("styleCheck")}  │ fmt & fix check   │
-      |│ \${styled("styleFix")}    │ fix then fmt      │
-      |│ \${styled("up2date")}     │ dependencyUpdates │
-      |╰─────────────┴───────────────────╯""".stripMargin
